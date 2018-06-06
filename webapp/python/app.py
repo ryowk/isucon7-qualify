@@ -10,7 +10,6 @@ import string
 import tempfile
 import time
 
-
 static_folder = pathlib.Path(__file__).resolve().parent.parent / 'public'
 icons_folder = static_folder / 'icons'
 app = flask.Flask(__name__, static_folder=str(static_folder), static_url_path='')
@@ -398,4 +397,5 @@ def get_icon(file_name):
 
 
 if __name__ == "__main__":
+    print("HHHHHHHHHHHHHONETUHOEUTHOEUNHT")
     app.run(port=8080, debug=True, threaded=True)
